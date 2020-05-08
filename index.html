@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+  <style>
+    * {box-sizing: border-box;}
+    ul {list-style-type: none;}
+    body {font-family: Verdana, sans-serif;}
 
-.month {
-  padding: 30px 25px;
-  width: 100%;
-  background: #1abc9c;
-  text-align: center;
-}
+    .month {
+      padding: 30px 25px;
+      width: 100%;
+      background: #1abc9c;
+      text-align: center;
+    }
 
-.month p {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
+    .month p {
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
 
-.month .year {
-  font-size: 15px;
-}
+    .month .year {
+      font-size: 15px;
+    }
 
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
-}
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      background-color: #ddd;
+    }
 
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
+    .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      color: #666;
+      text-align: center;
+    }
 
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
+    .days {
+      padding: 10px 0;
+      background: #eee;
+      margin: 0;
+    }
 
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 12px;
-  color: #777;
-}
+    .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: #777;
+    }
 
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
+    .days li .active {
+      padding: 5px;
+      background: #1abc9c;
+      color: white !important
+    }
 
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
+    /* Add media queries for smaller screens */
+    @media screen and (max-width:720px) {
+      .weekdays li, .days li {width: 13.1%;}
+    }
 
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
+    @media screen and (max-width: 420px) {
+      .weekdays li, .days li {width: 12.5%;}
+      .days li .active {padding: 2px;}
+    }
 
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}
-</style>
+    @media screen and (max-width: 290px) {
+      .weekdays li, .days li {width: 12.2%;}
+    }
+  </style>
 </head>
 <body>
 
 <h1>2020 Calendar</h1>
 
-<div class="month">
+<div class="month january">
   <p>January</p>
   <p class="year">2020</p>
 </div>
@@ -98,37 +98,37 @@ body {font-family: Verdana, sans-serif;}
 <ul class="days">
   <li>&nbsp;</li>
   <li>&nbsp;</li>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
+  <li id="day-1">1</li>
+  <li id="day-2">2</li>
+  <li id="day-3">3</li>
+  <li id="day-4">4</li>
+  <li id="day-5">5</li>
+  <li id="day-6">6</li>
+  <li id="day-7">7</li>
+  <li id="day-8">8</li>
+  <li id="day-9">9</li>
+  <li id="day-10">10</li>
+  <li id="day-11">11</li>
+  <li id="day-12">12</li>
+  <li id="day-13">13</li>
+  <li id="day-14">14</li>
+  <li id="day-15">15</li>
+  <li id="day-16">16</li>
+  <li id="day-17">17</li>
+  <li id="day-18">18</li>
+  <li id="day-19">19</li>
+  <li id="day-20">20</li>
+  <li id="day-21">21</li>
+  <li id="day-22">22</li>
+  <li id="day-23">23</li>
+  <li id="day-24">24</li>
+  <li id="day-25">25</li>
+  <li id="day-26">26</li>
+  <li id="day-27">27</li>
+  <li id="day-28">28</li>
+  <li id="day-29">29</li>
+  <li id="day-30">30</li>
+  <li id="day-31">31</li>
 </ul>
 
 
@@ -153,37 +153,35 @@ body {font-family: Verdana, sans-serif;}
   <li>&nbsp;</li>
   <li>&nbsp;</li>
   <li>&nbsp;</li>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
+  <li id="day-32">1</li>
+  <li id="day-33">2</li>
+  <li id="day-34">3</li>
+  <li id="day-35">4</li>
+  <li id="day-36">5</li>
+  <li id="day-37">6</li>
+  <li id="day-38">7</li>
+  <li id="day-39">8</li>
+  <li id="day-40">9</li>
+  <li id="day-41">10</li>
+  <li id="day-42">11</li>
+  <li id="day-43">12</li>
+  <li id="day-44">13</li>
+  <li id="day-45">14</li>
+  <li id="day-46">15</li>
+  <li id="day-47">16</li>
+  <li id="day-48">17</li>
+  <li id="day-49">18</li>
+  <li id="day-50">19</li>
+  <li id="day-51">20</li>
+  <li id="day-52">21</li>
+  <li id="day-53">22</li>
+  <li id="day-54">23</li>
+  <li id="day-55">24</li>
+  <li id="day-56">25</li>
+  <li id="day-57">26</li>
+  <li id="day-58">27</li>
+  <li id="day-59">28</li>
+  <li id="day-60">29</li>
 </ul>
 
 
@@ -209,313 +207,348 @@ body {font-family: Verdana, sans-serif;}
   <li>&nbsp;</li>
   <li>&nbsp;</li>
   <li>&nbsp;</li>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-  <li>32</li>
-  <li>33</li>
-  <li>34</li>
-  <li>35</li>
-  <li>36</li>
-  <li>37</li>
-  <li>38</li>
-  <li>39</li>
-  <li>40</li>
-  <li>41</li>
-  <li>42</li>
-  <li>43</li>
-  <li>44</li>
-  <li>45</li>
-  <li>46</li>
-  <li>47</li>
-  <li>48</li>
-  <li>49</li>
-  <li>50</li>
-  <li>51</li>
-  <li>52</li>
-  <li>53</li>
-  <li>54</li>
-  <li>55</li>
-  <li>56</li>
-  <li>57</li>
-  <li>58</li>
-  <li>59</li>
-  <li>60</li>
-  <li>61</li>
-  <li>62</li>
-  <li>63</li>
-  <li>64</li>
-  <li>65</li>
-  <li>66</li>
-  <li>67</li>
-  <li>68</li>
-  <li>69</li>
-  <li>70</li>
-  <li>71</li>
-  <li>72</li>
-  <li>73</li>
-  <li>74</li>
-  <li>75</li>
-  <li>76</li>
-  <li>77</li>
-  <li>78</li>
-  <li>79</li>
-  <li>80</li>
-  <li>81</li>
-  <li>82</li>
-  <li>83</li>
-  <li>84</li>
-  <li>85</li>
-  <li>86</li>
-  <li>87</li>
-  <li>88</li>
-  <li>89</li>
-  <li>90</li>
-  <li>91</li>
-  <li>92</li>
-  <li>93</li>
-  <li>94</li>
-  <li>95</li>
-  <li>96</li>
-  <li>97</li>
-  <li>98</li>
-  <li>99</li>
-  <li>100</li>
-  <li>101</li>
-  <li>102</li>
-  <li>103</li>
-  <li>104</li>
-  <li>105</li>
-  <li>106</li>
-  <li>107</li>
-  <li>108</li>
-  <li>109</li>
-  <li>110</li>
-  <li>111</li>
-  <li>112</li>
-  <li>113</li>
-  <li>114</li>
-  <li>115</li>
-  <li>116</li>
-  <li>117</li>
-  <li>118</li>
-  <li>119</li>
-  <li>120</li>
-  <li>121</li>
-  <li>122</li>
-  <li>123</li>
-  <li>124</li>
-  <li>125</li>
-  <li>126</li>
-  <li>127</li>
-  <li>128</li>
-  <li>129</li>
-  <li>130</li>
-  <li>131</li>
-  <li>132</li>
-  <li>133</li>
-  <li>134</li>
-  <li>135</li>
-  <li>136</li>
-  <li>137</li>
-  <li>138</li>
-  <li>139</li>
-  <li>140</li>
-  <li>141</li>
-  <li>142</li>
-  <li>143</li>
-  <li>144</li>
-  <li>145</li>
-  <li>146</li>
-  <li>147</li>
-  <li>148</li>
-  <li>149</li>
-  <li>150</li>
-  <li>151</li>
-  <li>152</li>
-  <li>153</li>
-  <li>154</li>
-  <li>155</li>
-  <li>156</li>
-  <li>157</li>
-  <li>158</li>
-  <li>159</li>
-  <li>160</li>
-  <li>161</li>
-  <li>162</li>
-  <li>163</li>
-  <li>164</li>
-  <li>165</li>
-  <li>166</li>
-  <li>167</li>
-  <li>168</li>
-  <li>169</li>
-  <li>170</li>
-  <li>171</li>
-  <li>172</li>
-  <li>173</li>
-  <li>174</li>
-  <li>175</li>
-  <li>176</li>
-  <li>177</li>
-  <li>178</li>
-  <li>179</li>
-  <li>180</li>
-  <li>181</li>
-  <li>182</li>
-  <li>183</li>
-  <li>184</li>
-  <li>185</li>
-  <li>186</li>
-  <li>187</li>
-  <li>188</li>
-  <li>189</li>
-  <li>190</li>
-  <li>191</li>
-  <li>192</li>
-  <li>193</li>
-  <li>194</li>
-  <li>195</li>
-  <li>196</li>
-  <li>197</li>
-  <li>198</li>
-  <li>199</li>
-  <li>200</li>
-  <li>201</li>
-  <li>202</li>
-  <li>203</li>
-  <li>204</li>
-  <li>205</li>
-  <li>206</li>
-  <li>207</li>
-  <li>208</li>
-  <li>209</li>
-  <li>210</li>
-  <li>211</li>
-  <li>212</li>
-  <li>213</li>
-  <li>214</li>
-  <li>215</li>
-  <li>216</li>
-  <li>217</li>
-  <li>218</li>
-  <li>219</li>
-  <li>220</li>
-  <li>221</li>
-  <li>222</li>
-  <li>223</li>
-  <li>224</li>
-  <li>225</li>
-  <li>226</li>
-  <li>227</li>
-  <li>228</li>
-  <li>229</li>
-  <li>230</li>
-  <li>231</li>
-  <li>232</li>
-  <li>233</li>
-  <li>234</li>
-  <li>235</li>
-  <li>236</li>
-  <li>237</li>
-  <li>238</li>
-  <li>239</li>
-  <li>240</li>
-  <li>241</li>
-  <li>242</li>
-  <li>243</li>
-  <li>244</li>
-  <li>245</li>
-  <li>246</li>
-  <li>247</li>
-  <li>248</li>
-  <li>249</li>
-  <li>250</li>
-  <li>251</li>
-  <li>252</li>
-  <li>253</li>
-  <li>254</li>
-  <li>255</li>
-  <li>256</li>
-  <li>257</li>
-  <li>258</li>
-  <li>259</li>
-  <li>260</li>
-  <li>261</li>
-  <li>262</li>
-  <li>263</li>
-  <li>264</li>
-  <li>265</li>
-  <li>266</li>
-  <li>267</li>
-  <li>268</li>
-  <li>269</li>
-  <li>270</li>
-  <li>271</li>
-  <li>272</li>
-  <li>273</li>
-  <li>274</li>
-  <li>275</li>
-  <li>276</li>
-  <li>277</li>
-  <li>278</li>
-  <li>279</li>
-  <li>280</li>
-  <li>281</li>
-  <li>282</li>
-  <li>283</li>
-  <li>284</li>
-  <li>285</li>
-  <li>286</li>
-  <li>287</li>
-  <li>288</li>
-  <li>289</li>
-  <li>290</li>
-  <li>291</li>
-  <li>292</li>
-  <li>293</li>
-  <li>294</li>
-  <li>295</li>
-  <li>296</li>
-  <li>297</li>
-  <li>298</li>
-  <li>299</li>
-  <li>300</li>
-  <li>301</li>
-  <li>302</li>
-  <li>303</li>
-  <li>304</li>
-  <li>305</li>
-  <li>306</li>
+  <li id="day-61">1</li>
+  <li id="day-62">2</li>
+  <li id="day-63">3</li>
+  <li id="day-64">4</li>
+  <li id="day-65">5</li>
+  <li id="day-66">6</li>
+  <li id="day-67">7</li>
+  <li id="day-68">8</li>
+  <li id="day-69">9</li>
+  <li id="day-70">10</li>
+  <li id="day-71">11</li>
+  <li id="day-72">12</li>
+  <li id="day-73">13</li>
+  <li id="day-74">14</li>
+  <li id="day-75">15</li>
+  <li id="day-76">16</li>
+  <li id="day-77">17</li>
+  <li id="day-78">18</li>
+  <li id="day-79">19</li>
+  <li id="day-80">20</li>
+  <li id="day-81">21</li>
+  <li id="day-82">22</li>
+  <li id="day-83">23</li>
+  <li id="day-84">24</li>
+  <li id="day-85">25</li>
+  <li id="day-86">26</li>
+  <li id="day-87">27</li>
+  <li id="day-88">28</li>
+  <li id="day-89">29</li>
+  <li id="day-90">30</li>
+  <li id="day-91">31</li>
+  <li id="day-92">32</li>
+  <li id="day-93">33</li>
+  <li id="day-94">34</li>
+  <li id="day-95">35</li>
+  <li id="day-96">36</li>
+  <li id="day-97">37</li>
+  <li id="day-98">38</li>
+  <li id="day-99">39</li>
+  <li id="day-100">40</li>
+  <li id="day-101">41</li>
+  <li id="day-102">42</li>
+  <li id="day-103">43</li>
+  <li id="day-104">44</li>
+  <li id="day-105">45</li>
+  <li id="day-106">46</li>
+  <li id="day-107">47</li>
+  <li id="day-108">48</li>
+  <li id="day-109">49</li>
+  <li id="day-110">50</li>
+  <li id="day-111">51</li>
+  <li id="day-112">52</li>
+  <li id="day-113">53</li>
+  <li id="day-114">54</li>
+  <li id="day-115">55</li>
+  <li id="day-116">56</li>
+  <li id="day-117">57</li>
+  <li id="day-118">58</li>
+  <li id="day-119">59</li>
+  <li id="day-120">60</li>
+  <li id="day-121">61</li>
+  <li id="day-122">62</li>
+  <li id="day-123">63</li>
+  <li id="day-124">64</li>
+  <li id="day-125">65</li>
+  <li id="day-126">66</li>
+  <li id="day-127">67</li>
+  <li id="day-128">68</li>
+  <li id="day-129">69</li>
+  <li id="day-130">70</li>
+  <li id="day-131">71</li>
+  <li id="day-132">72</li>
+  <li id="day-133">73</li>
+  <li id="day-134">74</li>
+  <li id="day-135">75</li>
+  <li id="day-136">76</li>
+  <li id="day-137">77</li>
+  <li id="day-138">78</li>
+  <li id="day-139">79</li>
+  <li id="day-140">80</li>
+  <li id="day-141">81</li>
+  <li id="day-142">82</li>
+  <li id="day-143">83</li>
+  <li id="day-144">84</li>
+  <li id="day-145">85</li>
+  <li id="day-146">86</li>
+  <li id="day-147">87</li>
+  <li id="day-148">88</li>
+  <li id="day-149">89</li>
+  <li id="day-150">90</li>
+  <li id="day-151">91</li>
+  <li id="day-152">92</li>
+  <li id="day-153">93</li>
+  <li id="day-154">94</li>
+  <li id="day-155">95</li>
+  <li id="day-156">96</li>
+  <li id="day-157">97</li>
+  <li id="day-158">98</li>
+  <li id="day-159">99</li>
+  <li id="day-160">100</li>
+  <li id="day-161">101</li>
+  <li id="day-162">102</li>
+  <li id="day-163">103</li>
+  <li id="day-164">104</li>
+  <li id="day-165">105</li>
+  <li id="day-166">106</li>
+  <li id="day-167">107</li>
+  <li id="day-168">108</li>
+  <li id="day-169">109</li>
+  <li id="day-170">110</li>
+  <li id="day-171">111</li>
+  <li id="day-172">112</li>
+  <li id="day-173">113</li>
+  <li id="day-174">114</li>
+  <li id="day-175">115</li>
+  <li id="day-176">116</li>
+  <li id="day-177">117</li>
+  <li id="day-178">118</li>
+  <li id="day-179">119</li>
+  <li id="day-180">120</li>
+  <li id="day-181">121</li>
+  <li id="day-182">122</li>
+  <li id="day-183">123</li>
+  <li id="day-184">124</li>
+  <li id="day-185">125</li>
+  <li id="day-186">126</li>
+  <li id="day-187">127</li>
+  <li id="day-188">128</li>
+  <li id="day-189">129</li>
+  <li id="day-190">130</li>
+  <li id="day-191">131</li>
+  <li id="day-192">132</li>
+  <li id="day-193">133</li>
+  <li id="day-194">134</li>
+  <li id="day-195">135</li>
+  <li id="day-196">136</li>
+  <li id="day-197">137</li>
+  <li id="day-198">138</li>
+  <li id="day-199">139</li>
+  <li id="day-200">140</li>
+  <li id="day-201">141</li>
+  <li id="day-202">142</li>
+  <li id="day-203">143</li>
+  <li id="day-204">144</li>
+  <li id="day-205">145</li>
+  <li id="day-206">146</li>
+  <li id="day-207">147</li>
+  <li id="day-208">148</li>
+  <li id="day-209">149</li>
+  <li id="day-210">150</li>
+  <li id="day-211">151</li>
+  <li id="day-212">152</li>
+  <li id="day-213">153</li>
+  <li id="day-214">154</li>
+  <li id="day-215">155</li>
+  <li id="day-216">156</li>
+  <li id="day-217">157</li>
+  <li id="day-218">158</li>
+  <li id="day-219">159</li>
+  <li id="day-220">160</li>
+  <li id="day-221">161</li>
+  <li id="day-222">162</li>
+  <li id="day-223">163</li>
+  <li id="day-224">164</li>
+  <li id="day-225">165</li>
+  <li id="day-226">166</li>
+  <li id="day-227">167</li>
+  <li id="day-228">168</li>
+  <li id="day-229">169</li>
+  <li id="day-230">170</li>
+  <li id="day-231">171</li>
+  <li id="day-232">172</li>
+  <li id="day-233">173</li>
+  <li id="day-234">174</li>
+  <li id="day-235">175</li>
+  <li id="day-236">176</li>
+  <li id="day-237">177</li>
+  <li id="day-238">178</li>
+  <li id="day-239">179</li>
+  <li id="day-240">180</li>
+  <li id="day-241">181</li>
+  <li id="day-242">182</li>
+  <li id="day-243">183</li>
+  <li id="day-244">184</li>
+  <li id="day-245">185</li>
+  <li id="day-246">186</li>
+  <li id="day-247">187</li>
+  <li id="day-248">188</li>
+  <li id="day-249">189</li>
+  <li id="day-250">190</li>
+  <li id="day-251">191</li>
+  <li id="day-252">192</li>
+  <li id="day-253">193</li>
+  <li id="day-254">194</li>
+  <li id="day-255">195</li>
+  <li id="day-256">196</li>
+  <li id="day-257">197</li>
+  <li id="day-258">198</li>
+  <li id="day-259">199</li>
+  <li id="day-260">200</li>
+  <li id="day-261">201</li>
+  <li id="day-262">202</li>
+  <li id="day-263">203</li>
+  <li id="day-264">204</li>
+  <li id="day-265">205</li>
+  <li id="day-266">206</li>
+  <li id="day-267">207</li>
+  <li id="day-268">208</li>
+  <li id="day-269">209</li>
+  <li id="day-270">210</li>
+  <li id="day-271">211</li>
+  <li id="day-272">212</li>
+  <li id="day-273">213</li>
+  <li id="day-274">214</li>
+  <li id="day-275">215</li>
+  <li id="day-276">216</li>
+  <li id="day-277">217</li>
+  <li id="day-278">218</li>
+  <li id="day-279">219</li>
+  <li id="day-280">220</li>
+  <li id="day-281">221</li>
+  <li id="day-282">222</li>
+  <li id="day-283">223</li>
+  <li id="day-284">224</li>
+  <li id="day-285">225</li>
+  <li id="day-286">226</li>
+  <li id="day-287">227</li>
+  <li id="day-288">228</li>
+  <li id="day-289">229</li>
+  <li id="day-290">230</li>
+  <li id="day-291">231</li>
+  <li id="day-292">232</li>
+  <li id="day-293">233</li>
+  <li id="day-294">234</li>
+  <li id="day-295">235</li>
+  <li id="day-296">236</li>
+  <li id="day-297">237</li>
+  <li id="day-298">238</li>
+  <li id="day-299">239</li>
+  <li id="day-300">240</li>
+  <li id="day-301">241</li>
+  <li id="day-302">242</li>
+  <li id="day-303">243</li>
+  <li id="day-304">244</li>
+  <li id="day-305">245</li>
+  <li id="day-306">246</li>
+  <li id="day-307">247</li>
+  <li id="day-308">248</li>
+  <li id="day-309">249</li>
+  <li id="day-310">250</li>
+  <li id="day-311">251</li>
+  <li id="day-312">252</li>
+  <li id="day-313">253</li>
+  <li id="day-314">254</li>
+  <li id="day-315">255</li>
+  <li id="day-316">256</li>
+  <li id="day-317">257</li>
+  <li id="day-318">258</li>
+  <li id="day-319">259</li>
+  <li id="day-320">260</li>
+  <li id="day-321">261</li>
+  <li id="day-322">262</li>
+  <li id="day-323">263</li>
+  <li id="day-324">264</li>
+  <li id="day-325">265</li>
+  <li id="day-326">266</li>
+  <li id="day-327">267</li>
+  <li id="day-328">268</li>
+  <li id="day-329">269</li>
+  <li id="day-330">270</li>
+  <li id="day-331">271</li>
+  <li id="day-332">272</li>
+  <li id="day-333">273</li>
+  <li id="day-334">274</li>
+  <li id="day-335">275</li>
+  <li id="day-336">276</li>
+  <li id="day-337">277</li>
+  <li id="day-338">278</li>
+  <li id="day-339">279</li>
+  <li id="day-340">280</li>
+  <li id="day-341">281</li>
+  <li id="day-342">282</li>
+  <li id="day-343">283</li>
+  <li id="day-344">284</li>
+  <li id="day-345">285</li>
+  <li id="day-346">286</li>
+  <li id="day-347">287</li>
+  <li id="day-348">288</li>
+  <li id="day-349">289</li>
+  <li id="day-350">290</li>
+  <li id="day-351">291</li>
+  <li id="day-352">292</li>
+  <li id="day-353">293</li>
+  <li id="day-354">294</li>
+  <li id="day-355">295</li>
+  <li id="day-356">296</li>
+  <li id="day-357">297</li>
+  <li id="day-358">298</li>
+  <li id="day-359">299</li>
+  <li id="day-360">300</li>
+  <li id="day-361">301</li>
+  <li id="day-362">302</li>
+  <li id="day-363">303</li>
+  <li id="day-364">304</li>
+  <li id="day-365">305</li>
+  <li id="day-366">306</li>
 </ul>
 
+<script>
+  Date.prototype.isLeapYear = function() {
+      var year = this.getFullYear();
+      if((year & 3) != 0) return false;
+      return ((year % 100) != 0 || (year % 400) == 0);
+  };
+
+  // Get Day of Year
+  Date.prototype.getDOY = function() {
+      var dayCount = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+      var mn = this.getMonth();
+      var dn = this.getDate();
+      var dayOfYear = dayCount[mn] + dn;
+      if(mn > 1 && this.isLeapYear()) dayOfYear++;
+      return dayOfYear;
+  };
+
+  function dayOfMarch() {
+    var now = new Date();
+    return now.getDOY() - 31 - 29  // minus January and February.
+  }
+
+  function selectDay() {
+    var now = new Date();
+    var dayOfYear = now.getDOY();
+    var liDay = document.getElementById("day-" + dayOfYear.toString());
+    var day = liDay.innerHTML;
+    liDay.innerHTML = "<span class=\"active\">" + day + "<\/span>";
+
+    console.log(now);
+    console.log(dayOfYear);
+  }
+
+  selectDay();
+</script>
 </body>
 </html>

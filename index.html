@@ -561,7 +561,20 @@
 
   function setToday() {
     var title = document.getElementById("today");
-    title.innerHTML = "Today is March " + dayOfMarch().toString() + ", 2020";
+    var day = dayOfMarch();
+
+    var suffix = "th";
+    var ones = day % 10;
+    var tens = (day % 100) - ones;
+    if (tens !== 10 && ones === 1) {
+      suffix = "st";
+    } else if (tens !== 10 && ones === 2) {
+      suffix = "nd";
+    } else if (tens !== 10 && ones === 3) {
+      suffix = "rd";
+    }
+
+    title.innerHTML = "Today is March " + day.toString() + suffix + ", 2020";
   }
 
   setToday();

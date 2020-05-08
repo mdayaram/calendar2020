@@ -6,6 +6,17 @@
     ul {list-style-type: none;}
     body {font-family: Verdana, sans-serif;}
 
+    .github {
+      float: right;
+      background-color: #EEEEEE;
+      color: #000000;
+      padding: 8px 20px;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
     .month {
       padding: 30px 25px;
       width: 100%;
@@ -78,7 +89,10 @@
 </head>
 <body>
 
-<h1 id="today"></h1>
+<div>
+  <a class="github" href="https://github.com/mdayaram/calendar2020">View on Github</a>
+  <h1 id="today"></h1>
+</div>
 
 <div class="month january">
   <p>January</p>
@@ -543,9 +557,6 @@
     var liDay = document.getElementById("day-" + dayOfYear.toString());
     var day = liDay.innerHTML;
     liDay.innerHTML = "<span class=\"active\">" + day + "<\/span>";
-
-    console.log(now);
-    console.log(dayOfYear);
   }
 
   function setToday() {

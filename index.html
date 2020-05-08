@@ -78,7 +78,7 @@
 </head>
 <body>
 
-<h1>2020 Calendar</h1>
+<h1 id="today"></h1>
 
 <div class="month january">
   <p>January</p>
@@ -534,7 +534,7 @@
 
   function dayOfMarch() {
     var now = new Date();
-    return now.getDOY() - 31 - 29  // minus January and February.
+    return now.getDOY() - 31 - 29;  // minus January and February.
   }
 
   function selectDay() {
@@ -548,6 +548,12 @@
     console.log(dayOfYear);
   }
 
+  function setToday() {
+    var title = document.getElementById("today");
+    title.innerHTML = "Today is March " + dayOfMarch().toString() + ", 2020";
+  }
+
+  setToday();
   selectDay();
 </script>
 </body>

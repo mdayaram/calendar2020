@@ -1,1 +1,4 @@
-# calendar2020
+# Calendar 2020
+
+A simple calendar for 2020 that tells you today's date as well as highlights
+it in a monthly calendar grid.

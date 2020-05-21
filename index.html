@@ -54,12 +54,14 @@
       padding: 10px 0;
       background: #eee;
       margin: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .days li {
       list-style-type: none;
       display: inline-block;
-      width: 13.6%;
+      min-width: 13.6%;
       text-align: center;
       margin-bottom: 5px;
       font-size: 12px;
@@ -215,7 +217,7 @@
   <li>Su</li>
 </ul>
 
-<ul class="days">
+<ul id="march-days" class="days">
   <li>&nbsp;</li>
   <li>&nbsp;</li>
   <li>&nbsp;</li>
@@ -531,6 +533,8 @@
 </ul>
 
 <script>
+  let lastMarchDay = 306;
+
   Date.prototype.isLeapYear = function() {
       var year = this.getFullYear();
       if((year & 3) != 0) return false;
@@ -577,6 +581,26 @@
 
     title.innerHTML = "Today is March " + day.toString() + suffix + ", 2020";
   }
+
+  function addMoreDates() {
+    console.log("Oh noes, we need more days!?");
+    const marchDays = document.getElementById("march-days");
+    for (let x=0;x<=30;x++) {
+      lastMarchDay++;
+      // console.log("Adding March ", lastMarchDay);
+      const li = document.createElement("li");
+      li.id = "day-"+lastMarchDay;
+      li.appendChild(document.createTextNode(lastMarchDay));
+      marchDays.appendChild(li);
+    }
+  }
+
+  window.addEventListener('scroll', function(e) {
+    // console.log(window.innerHeight + window.scrollY, ">", document.body.offsetHeight);
+    if (window.innerHeight + window.scrollY > document.body.offsetHeight){
+      addMoreDates();
+    }
+  })
 
   setToday();
   selectDay();

@@ -533,64 +533,80 @@
 </ul>
 
 <script>
-  let lastMarchDay = 306;
+  let lastDay = 366;
 
   Date.prototype.isLeapYear = function() {
-      var year = this.getFullYear();
+      const year = this.getFullYear();
       if((year & 3) != 0) return false;
       return ((year % 100) != 0 || (year % 400) == 0);
   };
 
   // Get Day of Year
   Date.prototype.getDOY = function() {
-      var dayCount = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
-      var mn = this.getMonth();
-      var dn = this.getDate();
-      var dayOfYear = dayCount[mn] + dn;
+      const dayCount = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+      const mn = this.getMonth();
+      const dn = this.getDate();
+
+      let dayOfYear = dayCount[mn] + dn;
       if(mn > 1 && this.isLeapYear()) dayOfYear++;
       return dayOfYear;
   };
 
-  function dayOfMarch() {
-    var now = new Date();
-    return now.getDOY() - 31 - 29;  // minus January and February.
+  function dayOfMarch(dayOfYear = null) {
+    if (dayOfYear === null) {
+      const now = new Date();
+      dayOfYear = now.getDOY();
+    }
+
+    return dayOfYear - 31 - 29;  // minus January and February.
   }
 
   function selectDay() {
-    var now = new Date();
-    var dayOfYear = now.getDOY();
-    var liDay = document.getElementById("day-" + dayOfYear.toString());
-    var day = liDay.innerHTML;
-    liDay.innerHTML = "<span class=\"active\">" + day + "<\/span>";
+    const selected = document.getElementsByClassName("active");
+    if (selected.length !== 0) {
+      return; // already selected
+    }
+
+    const now = new Date();
+    const dayOfYear = now.getDOY();
+    const liDay = document.getElementById("day-" + dayOfYear.toString());
+    if (liDay !== null) {
+      const day = liDay.innerHTML;
+      liDay.innerHTML = "<span class=\"active\">" + day + "<\/span>";
+    }
   }
 
   function setToday() {
-    var title = document.getElementById("today");
-    var day = dayOfMarch();
+    const title = document.getElementById("today");
+    const day = dayOfMarch();
 
-    var suffix = "th";
-    var ones = day % 10;
-    var tens = (day % 100) - ones;
+    const ones = day % 10;
+    const tens = (day % 100) - ones;
+
+    let suffix;
     if (tens !== 10 && ones === 1) {
       suffix = "st";
     } else if (tens !== 10 && ones === 2) {
       suffix = "nd";
     } else if (tens !== 10 && ones === 3) {
       suffix = "rd";
+    } else {
+      suffix = "th";
     }
 
     title.innerHTML = "Today is March " + day.toString() + suffix + ", 2020";
   }
 
   function addMoreDates() {
-    console.log("Oh noes, we need more days!?");
     const marchDays = document.getElementById("march-days");
     for (let x=0;x<=30;x++) {
-      lastMarchDay++;
-      // console.log("Adding March ", lastMarchDay);
+      lastDay++;
+
+      const marchDay = dayOfMarch(lastDay);
       const li = document.createElement("li");
-      li.id = "day-"+lastMarchDay;
-      li.appendChild(document.createTextNode(lastMarchDay));
+
+      li.id = "day-"+lastDay;
+      li.appendChild(document.createTextNode(marchDay));
       marchDays.appendChild(li);
     }
   }
@@ -599,6 +615,7 @@
     // console.log(window.innerHeight + window.scrollY, ">", document.body.offsetHeight);
     if (window.innerHeight + window.scrollY > document.body.offsetHeight){
       addMoreDates();
+      selectDay(); // In case today's date is not immediately present.
     }
   })
 

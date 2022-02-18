@@ -24,6 +24,11 @@
       text-align: center;
     }
 
+    .month-header {
+      position: sticky;
+      top: 0;
+    }
+
     .month p {
       margin: 0;
       padding: 0;
@@ -97,165 +102,175 @@
   <h1 id="today"></h1>
 </div>
 
-<div class="month january">
-  <p>January</p>
-  <p class="year">2020</p>
+<div id="january-header" class="month-header">
+  <div class="month">
+    <p>January</p>
+    <p class="year">2020</p>
+  </div>
+
+  <ul class="weekdays">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+  </ul>
 </div>
 
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
-
-<ul class="days">
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li id="day-1">1</li>
-  <li id="day-2">2</li>
-  <li id="day-3">3</li>
-  <li id="day-4">4</li>
-  <li id="day-5">5</li>
-  <li id="day-6">6</li>
-  <li id="day-7">7</li>
-  <li id="day-8">8</li>
-  <li id="day-9">9</li>
-  <li id="day-10">10</li>
-  <li id="day-11">11</li>
-  <li id="day-12">12</li>
-  <li id="day-13">13</li>
-  <li id="day-14">14</li>
-  <li id="day-15">15</li>
-  <li id="day-16">16</li>
-  <li id="day-17">17</li>
-  <li id="day-18">18</li>
-  <li id="day-19">19</li>
-  <li id="day-20">20</li>
-  <li id="day-21">21</li>
-  <li id="day-22">22</li>
-  <li id="day-23">23</li>
-  <li id="day-24">24</li>
-  <li id="day-25">25</li>
-  <li id="day-26">26</li>
-  <li id="day-27">27</li>
-  <li id="day-28">28</li>
-  <li id="day-29">29</li>
-  <li id="day-30">30</li>
-  <li id="day-31">31</li>
-</ul>
-
-
-<div class="month">
-  <p>February</p>
-  <p class="year">2020</p>
+<div id="january-days">
+  <ul class="days">
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li id="day-1">1</li>
+    <li id="day-2">2</li>
+    <li id="day-3">3</li>
+    <li id="day-4">4</li>
+    <li id="day-5">5</li>
+    <li id="day-6">6</li>
+    <li id="day-7">7</li>
+    <li id="day-8">8</li>
+    <li id="day-9">9</li>
+    <li id="day-10">10</li>
+    <li id="day-11">11</li>
+    <li id="day-12">12</li>
+    <li id="day-13">13</li>
+    <li id="day-14">14</li>
+    <li id="day-15">15</li>
+    <li id="day-16">16</li>
+    <li id="day-17">17</li>
+    <li id="day-18">18</li>
+    <li id="day-19">19</li>
+    <li id="day-20">20</li>
+    <li id="day-21">21</li>
+    <li id="day-22">22</li>
+    <li id="day-23">23</li>
+    <li id="day-24">24</li>
+    <li id="day-25">25</li>
+    <li id="day-26">26</li>
+    <li id="day-27">27</li>
+    <li id="day-28">28</li>
+    <li id="day-29">29</li>
+    <li id="day-30">30</li>
+    <li id="day-31">31</li>
+  </ul>
 </div>
 
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
+<div id="february-header" class="month-header">
+  <div id="february" class="month">
+    <p>February</p>
+    <p class="year">2020</p>
+  </div>
 
-<ul class="days">
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li id="day-32">1</li>
-  <li id="day-33">2</li>
-  <li id="day-34">3</li>
-  <li id="day-35">4</li>
-  <li id="day-36">5</li>
-  <li id="day-37">6</li>
-  <li id="day-38">7</li>
-  <li id="day-39">8</li>
-  <li id="day-40">9</li>
-  <li id="day-41">10</li>
-  <li id="day-42">11</li>
-  <li id="day-43">12</li>
-  <li id="day-44">13</li>
-  <li id="day-45">14</li>
-  <li id="day-46">15</li>
-  <li id="day-47">16</li>
-  <li id="day-48">17</li>
-  <li id="day-49">18</li>
-  <li id="day-50">19</li>
-  <li id="day-51">20</li>
-  <li id="day-52">21</li>
-  <li id="day-53">22</li>
-  <li id="day-54">23</li>
-  <li id="day-55">24</li>
-  <li id="day-56">25</li>
-  <li id="day-57">26</li>
-  <li id="day-58">27</li>
-  <li id="day-59">28</li>
-  <li id="day-60">29</li>
-</ul>
-
-
-<div class="month">
-  <p>March</p>
-  <p class="year">2020</p>
+  <ul class="weekdays">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+  </ul>
 </div>
 
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
+<div id="february-days">
+  <ul class="days">
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li id="day-32">1</li>
+    <li id="day-33">2</li>
+    <li id="day-34">3</li>
+    <li id="day-35">4</li>
+    <li id="day-36">5</li>
+    <li id="day-37">6</li>
+    <li id="day-38">7</li>
+    <li id="day-39">8</li>
+    <li id="day-40">9</li>
+    <li id="day-41">10</li>
+    <li id="day-42">11</li>
+    <li id="day-43">12</li>
+    <li id="day-44">13</li>
+    <li id="day-45">14</li>
+    <li id="day-46">15</li>
+    <li id="day-47">16</li>
+    <li id="day-48">17</li>
+    <li id="day-49">18</li>
+    <li id="day-50">19</li>
+    <li id="day-51">20</li>
+    <li id="day-52">21</li>
+    <li id="day-53">22</li>
+    <li id="day-54">23</li>
+    <li id="day-55">24</li>
+    <li id="day-56">25</li>
+    <li id="day-57">26</li>
+    <li id="day-58">27</li>
+    <li id="day-59">28</li>
+    <li id="day-60">29</li>
+  </ul>
+</div>
 
-<ul id="march-days" class="days">
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li>&nbsp;</li>
-  <li id="day-61">1</li>
-  <li id="day-62">2</li>
-  <li id="day-63">3</li>
-  <li id="day-64">4</li>
-  <li id="day-65">5</li>
-  <li id="day-66">6</li>
-  <li id="day-67">7</li>
-  <li id="day-68">8</li>
-  <li id="day-69">9</li>
-  <li id="day-70">10</li>
-  <li id="day-71">11</li>
-  <li id="day-72">12</li>
-  <li id="day-73">13</li>
-  <li id="day-74">14</li>
-  <li id="day-75">15</li>
-  <li id="day-76">16</li>
-  <li id="day-77">17</li>
-  <li id="day-78">18</li>
-  <li id="day-79">19</li>
-  <li id="day-80">20</li>
-  <li id="day-81">21</li>
-  <li id="day-82">22</li>
-  <li id="day-83">23</li>
-  <li id="day-84">24</li>
-  <li id="day-85">25</li>
-  <li id="day-86">26</li>
-  <li id="day-87">27</li>
-  <li id="day-88">28</li>
-  <li id="day-89">29</li>
-  <li id="day-90">30</li>
-  <li id="day-91">31</li>
-</ul>
+<div id="march-header" class="month-header">
+  <div class="month">
+    <p>March</p>
+    <p class="year">2020</p>
+  </div>
+
+  <ul class="weekdays">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+  </ul>
+</div>
+
+<div id="march-days">
+  <ul class="days">
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li id="day-61">1</li>
+    <li id="day-62">2</li>
+    <li id="day-63">3</li>
+    <li id="day-64">4</li>
+    <li id="day-65">5</li>
+    <li id="day-66">6</li>
+    <li id="day-67">7</li>
+    <li id="day-68">8</li>
+    <li id="day-69">9</li>
+    <li id="day-70">10</li>
+    <li id="day-71">11</li>
+    <li id="day-72">12</li>
+    <li id="day-73">13</li>
+    <li id="day-74">14</li>
+    <li id="day-75">15</li>
+    <li id="day-76">16</li>
+    <li id="day-77">17</li>
+    <li id="day-78">18</li>
+    <li id="day-79">19</li>
+    <li id="day-80">20</li>
+    <li id="day-81">21</li>
+    <li id="day-82">22</li>
+    <li id="day-83">23</li>
+    <li id="day-84">24</li>
+    <li id="day-85">25</li>
+    <li id="day-86">26</li>
+    <li id="day-87">27</li>
+    <li id="day-88">28</li>
+    <li id="day-89">29</li>
+    <li id="day-90">30</li>
+    <li id="day-91">31</li>
+  </ul>
+</div>
 
 <script>
   let lastDay = 91;
@@ -314,7 +329,7 @@
   }
 
   function addMoreDates() {
-    const marchDays = document.getElementById("march-days");
+    const marchDays = document.querySelector("#march-days .days");
     for (let x=0;x<=30;x++) {
       lastDay++;
 
@@ -343,7 +358,8 @@
 
   setToday();
   addDaysUntilToday();
-
+</script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
